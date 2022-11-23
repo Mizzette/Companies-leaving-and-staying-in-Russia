@@ -1,8 +1,6 @@
-import string
 import os
 import requests as req
 import pandas as pd
-from bs4 import BeautifulSoup
 
 
 def get_str(url: str) -> str:
@@ -65,7 +63,6 @@ def remove_dublicates(name_list: list, act_list: list) -> dict:
             break
     
     return(final_dict)
-    # print(final_dict)
 
 # alpha_list = [dict() for x in range(26)] # 26 letters there are in english aplhabet
 name_act_dict = { }
